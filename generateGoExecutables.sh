@@ -6,8 +6,8 @@ echo "Building Windows executables for arm64 architecture..."
 GOOS=windows GOARCH=arm64 go build -o bin/windows/arm64/serviceListDownload.exe main.go
 ##Windows copy files
 echo "Copying static files (README, config and logo) to relevant folders for Windows binaries..."
-cp ./README.md ./bin/windows/x64
-cp ./README.md ./bin/windows/arm64
+cp ./README.pdf ./bin/windows/x64
+cp ./README.pdf ./bin/windows/arm64
 cp ./config.json ./bin/windows/x64
 cp ./config.json ./bin/windows/arm64
 cp "./DRIC Full Logo.png" ./bin/windows/x64
@@ -23,8 +23,8 @@ echo "Building Mac executables for arm64 architecture..."
 GOOS=darwin GOARCH=arm64 go build -o bin/mac/M1/serviceListDownload main.go
 ##Mac/Darwin copy files
 echo "Copying static files (README, config and logo) to relevant folders for Mac binaries..."
-cp ./README.md ./bin/mac/x64
-cp ./README.md ./bin/mac/M1
+cp ./README.pdf ./bin/mac/x64
+cp ./README.pdf ./bin/mac/M1
 cp ./config.json ./bin/mac/x64
 cp ./config.json ./bin/mac/M1
 cp "./DRIC Full Logo.png" ./bin/mac/x64
@@ -40,8 +40,8 @@ echo "Building Linux executables for arm64 architecture..."
 GOOS=linux GOARCH=arm64 go build -o bin/linux/arm64/serviceListDownload main.go
 ##Linux copy files
 echo "Copying static files (README, config and logo) to relevant folders for Linux binaries..."
-cp ./README.md ./bin/linux/x64
-cp ./README.md ./bin/linux/arm64
+cp ./README.pdf ./bin/linux/x64
+cp ./README.pdf ./bin/linux/arm64
 cp ./config.json ./bin/linux/x64
 cp ./config.json ./bin/linux/arm64
 cp "./DRIC Full Logo.png" ./bin/linux/x64
